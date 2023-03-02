@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: League Spartan, Verdana, Tahoma;
+}
+
+.bottom-pattern {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    top: 165px;
+    transform: rotate(180deg);
+    left: 0;
+    margin-bottom: -400px;
+}
+h1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    position: relative;
+    top: -175px;
+}
+/* Paragragh under h1 */
+.first-section > p {
+    width: 87%; 
+    text-align: center;
+    margin: auto;
+    color: hsl(300, 43%, 22%);
+    position: relative;
+    top: -155px;
+    line-height: 1.7;
+    font-weight: 540;   
+}
+/* 1st, 2nd and 3rd container (Reviews, Guru and BestTech) */
+.reviews-star, .guru-star, .BestTech-star {
+    background-color: hsl(300, 24%, 96%);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 90px;
+    border-radius: 10px;
+}
+.reviews-star {
+    position: relative;
+    top: -110px;
+}
+/* Stars inside 1st, 2nd and 3rd container */
+.reviews-five, .guru-five, .BestTech-five {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+/* spans inside 1st, 2nd and 3rd container */
+.reviews-span, .guru-span, .BestTech-span {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    position: relative; 
+    top: 30px;
+    text-align: center;
+}
+p::first-letter {
+    font-size: 20px;
+}
+.guru-star {
+    position: relative;
+    top: -90px;
+}
+.BestTech-star {
+    position: relative;
+    top: -70px;
+}
+.first-person, .second-person, .third-person {
+    background: hsl(300, 43%, 22%);
+    min-height: 330px;
+    border-radius: 10px;
+    width: 100%;
+}
+.colton-image, .irene-image, .anne-image {
+    clip-path: circle(50%);
+    margin-left: 40px;
+    position: relative;
+    top: 50px;
+}
+/* div containing only span for the first, second and third person */
+.first-person-span, .second-person-span, .third-person-span {
+    color:hsl(300, 24%, 96%);
+    width: 45%;
+    position: relative;
+    right: -150px;
+    top: -25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.verified {
+    color: hsl(333, 80%, 67%);
+}
+.first-person p, .second-person p, .third-person p {
+    color: hsl(300, 24%, 96%);
+    margin: 35px;
+    width: 85%;
+    line-height: 1.5;
+}
+.first-person, .second-person, .third-person {
+    width: 90%;
+}
+.first-person {
+    margin-left: 20px;
+    position: absolute;
+}
+.second-person {
+    margin-left: 25px;
+    position: relative;
+    top: 350px;
+    left: -5px;
+}    
+.third-person {
+   position: relative;
+   left: 20px;
+   top: 95px;
+   margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .top-pattern {
+        width: 36%;
+    }
+    h1 {
+        width: 45%;
+        text-align: left;
+        position: relative;
+        top: -135px;
+        margin-left: 50px;
+        font-size: 1.7rem;
+    }
+    /* Paragragh under h1 */
+    .first-section > p {
+        width: 70%;
+        text-align: left;
+        position: relative;
+        left: -50px;
+        top: -120px;
+    }
+    /* 1st, 2nd and 3rd container (Reviews, Guru and BestTech) */
+    .reviews-star, .guru-star, .BestTech-star {
+        width: 60%;
+        height: 40px;
+        display: flex;
+        border-radius: 5px;
+    }
+    .reviews-star {
+        position: relative;
+        left: -20px;
+        top: -90px;
+    }
+    .guru-star {
+        position: relative;
+        left: 30px;
+        top: -80px;
+    }
+    .BestTech-star {
+        position: relative;
+        left: 80px;
+        top: -70px;
+    }
+    /* The stars inside Reviews, Guru and BestTech container */
+    .reviews-five, .guru-five, .BestTech-five {
+        position: relative;
+        left: 30px;
+        top: 5px;
+        width: 3%;
+        height: 15px;
+        margin: 5px;
+    }
+    .reviews-span, .guru-span, .BestTech-span {
+        position: relative;
+        margin-left: -140px;
+    }
+
+    /* spans inside 1st, 2nd and 3rd container */
+    .reviews-span, .guru-span, .BestTech-span {
+        position: relative;
+        left: 200px;
+        font-size: 0.8rem;
+        top: 10px;
+    }
+
+    .first-person {
+        width: 30%;
+        position: absolute;
+        top: 400px;
+        margin: 50px;
+    }
+    .second-person {
+        width: 30%;
+        position: absolute;
+        top: 500px;
+        left: 450px;
+    }
+    .third-person {
+        width: 30%;
+        height: 60px;
+        margin: -50px;
+        position: absolute;
+        top: 600px;
+        left: 950px
+    }
+    .bottom-pattern {
+        width: 85%;
+        position: relative;
+        top: -250px;
+        height: 750px;
+        transform: rotate(180deg);
+        margin-bottom: -400px;
+        left: 290px;
+    } 
+    /* For h1, p, 1st, 2nd and 3rd container */  
+    .wrapper-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-template-rows: 150px;
+        grid-template-areas:
+        "a b"
+        "a b";
+        align-items: start;    
+    }
+    /* For first-person, second-person and third-person */
+    .wrapper-2 {
+        display: grid;
+        grid-template-columns: 4 1fr;
+        grid-template-areas:
+        "a b c d ";
+        align-items: start;
+    } 
+    
+}
+
+
